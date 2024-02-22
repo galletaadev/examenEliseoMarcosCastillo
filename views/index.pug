@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    script.
+        let url = '/personaje/' + personaje.id; //planteamiento sin terminar de funcionar.
+        console.log(url);
+    h1 Lista completa
+    each personaje in personajes
+        li
+            a(href=url) 
+                =   personaje.name
